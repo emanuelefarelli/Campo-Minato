@@ -12,8 +12,8 @@ body{
 
 header{
     background-color: rgb(49, 80, 138);
-    height: 200px;
-    margin-bottom: 5rem;
+    height: 170px;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,16 +65,16 @@ h2{
 
 h3.counter{
     position: absolute;
-    right: 2rem;
+    right: 15vw;
     top: 50%;
     font-size: 2rem;
 }
 
 div.container{
     background-color: rgb(21, 54, 26);
-    width: 900px;
-    height: 900px;
-    padding: 5px;
+    width: 700px;
+    height: 700px;
+    padding: 2px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +113,7 @@ div.cell.clicked-boom{
 div.cell{
     background-color: rgb(37, 95, 45);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    margin: 5px;
+    margin: 2px;
     display: flex;
     justify-content: center;
     align-items: center;

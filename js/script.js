@@ -38,7 +38,7 @@ function createCell(container, idCell, bombsArray, sideLength){
     cell.classList.add('cell');
     cell.setAttribute('id', idCell);
 
-    cell.setAttribute('style', ('width: calc((100% / '+sideLength+') - 10px);height: calc((100% / '+sideLength+') - 10px);'));
+    cell.setAttribute('style', ('width: calc((100% / '+sideLength+') - 4px);height: calc((100% / '+sideLength+') - 4px);'));
 
     cell.innerHTML = `<pre>${idCell}</pre>`;
     container.appendChild(cell);
@@ -75,7 +75,6 @@ function stepSafe(container, cell, idCell, sideLength, bombsArray, steps){
         }else{
             cell.classList.add('clicked-near');
         }
-
     }else if(bombsArray.includes(parseInt(idCell) - 1)){// Controllo sx
         //Controllo se la bomba è sulla riga precedente
         if(((parseInt(idCell) - 1) % parseInt(sideLength)) == 0 ){
@@ -83,7 +82,6 @@ function stepSafe(container, cell, idCell, sideLength, bombsArray, steps){
         }else{
             cell.classList.add('clicked-near');
         }
-
     }else{
         cell.classList.add('clicked-ok');
     }
