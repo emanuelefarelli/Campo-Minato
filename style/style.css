@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(37, 95, 45);
+    color: white;
+}
+
+header{
+    background-color: rgb(49, 80, 138);
+    height: 200px;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    margin-right: 5rem;
+    font-size: 3rem;
+}
+
+header form{
+    display: flex;
+    flex-direction: column;
+}
+
+header form>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header form>*{
+    margin: 0.5rem;
+}
+
+header form select{
+    width: 150px;
+    height: 30px;
+}
+
+header form label{
+    margin-right: 1rem;
+}
+
+header form button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3.counter{
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    font-size: 2rem;
+}
+
+div.container{
+    background-color: rgb(21, 54, 26);
+    width: 900px;
+    height: 900px;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.container.end-game{
+    background-color: rgba(0, 0, 0, 0.459);
+}
+
+div.container p{
+    border-radius: 10px;
+    background-color: rgb(49, 80, 138);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 4rem;
+    font-size: 2.2rem;
+    margin: auto;
+}
+
+div.cell.clicked-ok{
+    background-color: rgb(70, 67, 45);
+}
+
+div.cell.clicked-near{
+    background-color: rgb(190, 174, 50);
+}
+
+div.cell i{
+    font-size: 2rem;
+    color: rgb(95, 4, 4);
+}
+
+div.cell.clicked-boom{
+    background-color: rgb(185, 42, 42);
+}
+
+div.cell{
+    background-color: rgb(37, 95, 45);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
